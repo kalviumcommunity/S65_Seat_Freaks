@@ -1,5 +1,5 @@
-### **Project Title**  
-**Seat Freaks: The Ultimate Collection of Funny Chairs**  
+ 
+# Seat Freaks: The Ultimate Collection of Funny Chairs  
 
 ### **Project Overview**  
 Seat Freaks is a quirky full-stack website dedicated to showcasing a collection of funny, bizarre, and oddly-designed chairs from around the world. Users can log in, explore the gallery, like, comment, and share their favorite chair images, and even upload their own findings. The platform aims to create a fun, interactive community around the absurd and humorous world of unique seating.  
