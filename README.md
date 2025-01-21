@@ -1,5 +1,3 @@
-# S65_Seat_Freaks
-This is your first repository
 ### **Project Title**  
 **Seat Freaks: The Ultimate Collection of Funny Chairs**  
 
