@@ -41,4 +41,4 @@ Seat Freaks is a quirky full-stack website dedicated to showcasing a collection 
 - **Unique Appeal**: The concept of funny chairs is niche yet universally relatable, making it a fun and lighthearted platform to develop.  
 - **Skill Development**: This project will require the implementation of a full authentication system, CRUD operations, and user interaction features, making it an excellent learning opportunity.  
 - **Community Engagement**: Building a project with shareable content can generate organic user engagement and encourage creativity.  
-- **Portfolio Worthy**: The combination of technical complexity and a humorous theme makes it a standout project for your portfolio.  
+- **Portfolio Worthy**: The combination of technical complexity and a humorous theme makes it a standout project .
