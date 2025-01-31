@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Kishoore",
   "license": "ISC",
-  "description": ""
+  "description": "Seat Freaks is a fun social media app where users share and discover hilarious, weird, and creative chair photos.",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
-
