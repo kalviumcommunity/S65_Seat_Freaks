@@ -2,12 +2,23 @@ const express=require('express');
 
 const app=express();
 
-PORT=3000;
+const PORT=3000;
 
 app.get('/',(req,res)=>{
-    res.send('Hello World');
+    try{
+        res.send('Hello World');
+    }catch(error){
+        res.status(500).send('Internal Server error')}
 });
 
 app.listen(PORT,()=>{
-    console.log(`Server is running on port ${PORT}`);
+    try{
+        console.log(`Server is running on port ${PORT}`);
+    }catch(error){
+        console.log('Server error',error)
+        res.status(500).send('Internal Server Error');
+    }
 });
+
+
+
