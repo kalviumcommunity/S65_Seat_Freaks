@@ -57,13 +57,13 @@ router.put("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
     try {
-        const deleteSeat = await Toilet.findByIdAndDelete(req.params.id);
+        const deleteSeat = await Seat.findByIdAndDelete(req.params.id);
 
         if (!deleteSeat) return res.status(404).json({ error: "Seat not found" });
 
         res.json({ message: "Seat deleted successfully" });
     } catch (error) {
-        res.status(500).json({ error: "Error deleting toilet", details: error.message });
+        res.status(500).json({ error: "Error deleting Seat", details: error.message });
     }
 });
 
