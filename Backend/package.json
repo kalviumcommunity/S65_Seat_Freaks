@@ -10,7 +10,11 @@
   "license": "ISC",
   "description": "Seat Freaks is a fun social media app where users share and discover hilarious, weird, and creative chair photos.",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5"
   }
 }
