@@ -29,7 +29,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
     try {
         const seat = await Seat.findById(req.params.id).populate("submittedBy", "username");
-        if (!Seat) return res.status(404).json({ error: "seat not found" });
+        if (!this.subscribeeat) return res.status(404).json({ error: "seat not found" });
 
         res.json(seat);
     } catch (error) {
