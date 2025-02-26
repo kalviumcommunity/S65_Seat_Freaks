@@ -1,25 +1,36 @@
 const express = require('express');
-const connectDB = require('./config/db');
-
+require('dotenv').config();
 const app = express();
-const PORT = 3000;
+const connetDB = require('./config/db');
+const auth = require('./middleware/auth');
 
 app.use(express.json());
 
-app.get('/ping', async (req, res) => {
+app.use("/api/users", require("./routes/user"));
+app.use("/api/seat", auth, require("./routes/seat"));
+app.use("/api/reviews", auth, require("./routes/review"));
+app.use("/api/reports", auth, require("./routes/report"));
+app.use("/api/leaderboard", auth, require("./routes/leaderboard"));
+
+app.get('/ping', (req, res) => {
     try {
-        res.send('Ping is Working Fine...');
+        res.status(200).send("Ping Working Fine");
     } catch (error) {
-        res.status(500).send('Internal Server Error');
+        res.status(500).json({
+            error: "Internal Server Error",
+            message: "Ping route is not Working Fine",
+            description: error.message
+        });
     }
 });
 
-app.listen(PORT, async () => {
+app.listen(3000, (req, res) => {
     try {
-        await connectDB();
-        console.log(`Server is running on port ${PORT}`);
+        connetDB();
+        console.log("Server is Listening at Port 3000");
     } catch (error) {
-        console.error('Server error:', error);
-        process.exit(1);
+        console.log(error.message);
     }
 });
+
+
