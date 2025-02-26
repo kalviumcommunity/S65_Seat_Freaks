@@ -4,8 +4,21 @@ meta {
   seq: 5
 }
 
-get {
+post {
   url: http://localhost:3000/api/seat
-  body: none
-  auth: none
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YWQ3MzVmOTM5ZTMyYTY2NDBkYTY0NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM5NDIwNzEwLCJleHAiOjE3NDAwMjU1MTB9.qGF03eLbRPVOAIt9MJtKN-vQa-jngp-EmYsAl11U7yk
+}
+
+body:json {
+  {
+    "title":"super",
+    "address":"40004 street matupallaiyam,thanjavur tamilnadu 918273",
+    "description":"what a model funny seat",
+    "images":"https://pleated-jeans.com/wp-content/uploads/2023/06/funny-furniture-designs-9.jpg"
+  }
 }

@@ -5,7 +5,20 @@ meta {
 }
 
 post {
-  url: http:/localhost:3000/api/review
-  body: none
-  auth: none
+  url: http:/localhost:3000/api/reviews
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YWQ3MzVmOTM5ZTMyYTY2NDBkYTY0NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM5NDIwNzEwLCJleHAiOjE3NDAwMjU1MTB9.qGF03eLbRPVOAIt9MJtKN-vQa-jngp-EmYsAl11U7yk
+}
+
+body:json {
+  {
+    "seatId":"67ad7c09939e32a6640da650",
+    "userId":"67ad735f939e32a6640da646",
+    "rating":3,
+    "commentText":"nice one"
+  }
 }

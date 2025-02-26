@@ -6,6 +6,20 @@ meta {
 
 post {
   url: http://localhost:3000/api/users/signup
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "username":"kishoore",
+    "email":"kishoore@gmail.com",
+    "password":"Jevan@4"
+  }
+}
+
+body:multipart-form {
+  username: kishoore
+  email: kishoore@gmail.com
+  password: Jevan@4
 }
